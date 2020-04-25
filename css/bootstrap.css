@@ -684,6 +684,18 @@ pre code {
 {
   width: 100%;
   color: white;
+  font-weight: bold;
+  background-color: rgb(88, 9, 179);
+  border-style: groove;
+  border-radius: 5px;          
+}
+.navbar-brand-1
+{
+  color: white;
+  font-weight: bold;
+  background-color: rgb(88, 9, 179);
+  border-style: groove;
+  border-radius: 5px;          
 }
 @media (min-width: 576px) {
   .container, .container-sm {
