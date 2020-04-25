@@ -50,6 +50,7 @@ span{
   font-weight: bold;
   color: white;
   margin-left: 5px;
+  padding: 5px;
 }
 html {
   font-family: sans-serif;
@@ -687,7 +688,7 @@ pre code {
   font-weight: bold;
   background-color: rgb(44, 7, 87);
   border-style: groove;
-  border-radius: 5px;          
+  border-radius: 5px;       
 }
 .navbar-brand-1
 {
@@ -695,7 +696,8 @@ pre code {
   font-weight: bold;
   background-color: rgb(44, 7, 87);
   border-style: groove;
-  border-radius: 5px;          
+  border-radius: 5px;   
+  padding: 2px;       
 }
 @media (min-width: 576px) {
   .container, .container-sm {
