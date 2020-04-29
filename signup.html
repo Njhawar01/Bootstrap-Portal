@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
     <title>Bootstrap Project</title>
+    <style>
+      h3
+      {
+        margin-left: 0px;
+        padding-top: 5px;
+      }
+
+    </style>
   </head>
   <body>
     
@@ -56,78 +64,96 @@
     </nav>
     </div>
 
-    <div class="container-fluid">
-        <h2>New Employee</h2>
+    <div class="container">
+        <h3>New Employee</h3>
         <form>
-        <div class="row">
-            <div class="col-md-4">
-        <label for="First Name">First Name</label><br>  
-        <input type="text">
-            </div>
-            <div class="col-md-4">
-                <label for="Middle Name">Middle Name</label><br>
-                <input type="text">
-            </div>
-            <div class="col-md-4">
-        <label for="Last Name">Last Name</label><br>
-        <input type="text">
-            </div>
-            
+        <div class="form-row">
+        <div class="form-group col-md-4">
+              <label for="First-Name">First Name</label>
+              <input type="text" class="form-control" style="padding: 2px;" id="First-Name" placeholder="First Name">
+              <span class="badge badge-danger" style="font-size: 10px;"></span>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-        <label for="Address Line 1">Address Line 1</label><br>  
-        <input type="text">
-            </div>
-            <div class="col-md-6">
-                <label for="Address Line 2">Address Line 2</label><br>
-                <input type="text">
-            </div>
+        <div class="form-group col-md-4">
+            <label for="Middle-Name">Middle Name</label>
+            <input type="text" class="form-control" style="padding: 2px;" id="Middle-Name" placeholder="Middle Name">
+            <span class="badge badge-danger" style="font-size: 10px;"></span>
         </div>
-
-        <div class="row">
-            <div class="col-md-6">
-        <label for="Email">Email</label><br>  
-        <input type="text">
-            </div>
-            <div class="col-md-3">
-                <label for="Password">Password</label><br>
-                <input type="text">
-            </div>
-            <div class="col-md-3">
-        <label for="Confirm Password">Confirm Password</label><br>
-        <input type="text">
-            </div>
-            
+        <div class="form-group col-md-4">
+          <label for="Last-Name">Last Name</label>
+          <input type="text" class="form-control" style="padding: 2px;" id="Last-Name" placeholder="Last Name">
+          <span class="badge badge-danger" style="font-size: 10px;"></span>
         </div>
-
-        <div class="row">
-            <div class="col-md-3">
-        <label for="Department">Department</label><br>  
-        <select>
-            <option>Select One</option>
-            <option>HR</option>
-            <option>Sales</option>
-            <option>Marketing</option>
-            <option>Development</option>
-        </select>
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+              <label for="address1">Address Line 1</label>
+              <input type="text" class="form-control" style="padding: 2px;" id="address1" placeholder="Address Line">
+              <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="address2">Address Line 2</label>
+                  <input type="text" class="form-control" id="address2" placeholder="Address Line 2">
+                  <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
             </div>
-            <div class="col-md-3">
-                <label for="DoB">Date Of Birth</label><br>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                    <label for="Email">Email</label>
+                    <input type="text" class="form-control" style="padding: 2px;" id="Email" placeholder="Email Id">
+                    <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-3">
+                  <label for="Password">Password</label>
+                  <input type="text" class="form-control" style="padding: 2px;" id="Password" placeholder="Password">
+                  <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="CPassword">Confirm Password</label>
+                <input type="text" class="form-control" style="padding: 2px;" id="CPassword" placeholder="Confirm Password">
+                <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              </div>
+              <div class="form-row">
+              <div class="form-group col-md-3">
+                  <label for="category">Department</label>
+                  <select id="category" class="form-control">
+                      <option>Choose one...</option>
+                      <option>HR</option>
+                      <option>Sales</option>
+                      <option>Marketing</option>
+                      <option>R & D</option>
+                  </select>
+                  <span class="badge badge-danger" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="Date Of Birth">Date Of Birth</label>
                 <input type="text" class="form-control" id="dateOfBirth">
+              </div>
+              <div class="form-group col-md-3">
+                  <label for="active">Active</label><br>
+                  <div class="custom-control custom-radio custom-control-inline" style="padding-left: 5px;">
+                      <input type="radio" id="radio1" name="active" class="custom-control-input">
+                      <label class="custom-control-label" for="radio1">Male</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline" style="padding: 0em;">
+                      <input type="radio" id="radio2" name="active" class="custom-control-input">
+                      <label class="custom-control-label" for="radio2">Female</label>
+                    </div>
+                    <span class="badge badge-danger" id="radio-error" style="font-size: 10px;"></span>
+              </div>
+              <div class="form-group col-md-3">
+                <div class="form-group form-check" style="padding: 0px;">
+                  <label class="form-check-label" for="check1" style="margin: 0px; padding: 0px;">Permanent</label>
+                  <input type="checkbox" class="form-check-input" id="check1" style="margin: 0px; padding: 0px;">
+                </div>
             </div>
-            <div class="col-md-3">
-                <label for="Gender">Gender</label><br>
-                <input type="radio" id="male" name="gender" value="male">Male
-                <input type="radio" id="female" name="gender" value="female">Female
-            </div>   
-        </div>
-        <div class="row">
-        <div class="col-md-3">
-            <button type="button" class="btn btn-primary btn-1">Save</button>
-        </div>
-        </div>
-        </form>
+          </div>
+              <div class="form-row">
+              <div class="form-group col-md-12" style="padding-bottom: 10px;">
+                  <a href="index.html"><button type="button" class="btn btn-primary">Save</button></a>
+              </div>
+              </div>
+          </form>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
